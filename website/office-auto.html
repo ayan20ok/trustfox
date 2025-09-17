@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Trustfox - Office Equipment</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="bootstrap-5.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+  html { scroll-behavior: smooth; }
+  .navbar { background:#ba0001; }
+  .nav-link { color:white; font-size:20px; }
+  .topband{ height: 150px; }
+  .quicklinks { color: white; }
+  .quicklinks a { color: lightgrey; text-decoration: none; }
+  .aboutus{ width: 90%; padding: 2%; margin: 30px 30px 50px 30px; border-radius: 30px; }
+  .aboutus h3{ text-align: center; padding-bottom: 80px; margin-top: 50px; font-size: 40px; }
+  .aboutus h4{ color: #ba0001; margin-top: 30px; font-size: 30px; }
+  .aboutus p{ margin-top: 30px; font-size: 22px; }
+  .subheading { width: 20%; margin: auto; margin-top: 5%; color: #ba0001; }
+  .subheading h3 { text-align: center; padding-top:10px; }
+  .read-more{ background: #ba0001; width: 150px; margin: auto; text-align: center; padding: 1.5%; color:white; font-size:20px; }
+  .img-block{ margin:auto; margin-top: 70px; width:70%; margin-bottom:20px; }
+  .cat-heading { text-align: center; padding: 2%; }
+  .product-block{ border: 2px solid #44546A; border-radius: 20px; margin: 20px; }
+  .product-block img{ width: 99%; padding: 5%; margin: auto; }
+  .product-block div{ background: #44546A; height: 158px; border-radius: 0px 0px 18px 18px; text-align: center; padding-top: 20px; font-size: 24px; color: white; }
+  .product-cat { background: #F0EDED; border: black 2px solid; padding:2%; }
+  .product-cat img { margin:auto; width:90%; }
+  .mae { padding: 2%; background: aliceblue; }
+  .mae img { margin:auto; width:90%; }
+  .arrow { position: fixed; width: 50px; height: 50px; background: #ba0001; border-radius: 50%; text-align: center; padding-top: 10px; right: 10px; bottom: 10px; color: white; }
+  .footer{ background:#ba0001; }
+  .footer ul { list-style-type: none; color: lightgrey; }
+  .footer h3 { color: white; margin-top:30px; margin-left:30px; }
+  ul.f-menu-icon li{ list-style-type: none; display: inline; vertical-align: baseline; }
+  ul.f-menu-icon li:first-child{ padding-right:1%; }
+  .vd { text-decoration:none; font-size:20px; }
+  .vd:hover { color:#ba0001; cursor:pointer; }
+  .dropdown-menu{ background: #ba0001; }
+  .dropdown-item{ color: white; }
+  .parallax { min-height: 500px; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; }
+  .call { padding-top:10px; float:right; }
+  @media only screen and (max-width: 600px) {
+    .call { padding-top:10px; margin-right: 40%; }
+  }
+  </style>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function(){
+      dropdowns = document.querySelectorAll('.dropdown-toggle')
+      dropdowns.forEach((dd)=>{
+          dd.addEventListener('click', function (e) {
+              var el = this.nextElementSibling
+              el.style.display = el.style.display==='block'?'none':'block'
+          })
+      })
+    });
+  </script>
+</head>
+<body>
+
+<div class="container-fluid" id="top">
+  <div class="row">
+    <div class="col-sm-4"><img src="images/logo.png" alt="Trustfox" class="d-block"></div>
+    <div class="col-sm-4 topband">
+      <div style="display:flex;" class="call">
+        <div><img src="images/call.jpg" alt="call-image" class="d-block"></div>
+        <div style="margin-left:10px;"><b>9849141200</b><br>Any Query? Call Us</div>
+      </div>
+    </div>
+    <div class="col-sm-4 topband">
+      <div style="display:flex; padding-top:10px; float:right; margin-bottom:20px;">
+        <div><img src="images/locate.jpg" alt="call-image" class="d-block"></div>
+        <div style="margin-left:10px;"><b>Trustfox Solutions</b><br>
+        Office No: 273, Plot No-19D,<br>
+        Satara Plaza, Thane,<br>
+        Navi Mumbai-400705,
+        Maharashtra, India<br><br></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<nav class="navbar navbar-expand-sm">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item px-lg-5 px-sm-3 px-1">
+          <a class="nav-link" href="index.html">HOME</a>
+        </li>
+        <li class="nav-item px-lg-5 px-sm-3 px-1">
+          <a class="nav-link" href="aboutus.html">ABOUT US</a>
+        </li>
+       
+        <li class="nav-item dropdown px-lg-5 px-sm-3 px-1">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">PRODUCT</a>
+          <ul class="dropdown-menu">
+		 <li><a class="dropdown-item" href="#"><b>IT SOLUTIONS</b></a></li>
+            <li><a class="dropdown-item" href="networking.html">NETWORKING </a></li>
+            <li><a class="dropdown-item" href="cctv.html">CCTV & SURVEILLANCE</a></li>
+            <li><a class="dropdown-item" href="access.html">ACCESS CONTROL</a></li>
+			<li><a class="dropdown-item" href="wifi.html">WiFi & TELECOM</a></li>
+			<li><a class="dropdown-item" href="av.html">AUDIO VIDEO</a></li>
+			<li><a class="dropdown-item" href="ithardware.html">IT HARDWARE</a></li>
+			 <li><hr class="dropdown-divider"></li>
+			 <li><a class="dropdown-item"><b>OFFICE SOLUTIONS</b></a></li>
+			<li><a class="dropdown-item" href="office-storage.html">OFFICE STORAGE</a></li>
+			<li><a class="dropdown-item" href="office-chairs.html">OFFICE CHAIRS</a></li>
+			<li><a class="dropdown-item" href="security-equipment.html">SEQURITY EQUIPMENTS</a></li>
+			<li><a class="dropdown-item" href="office-auto.html">OFFICE AUTOMATION</a></li>
+			</ul></li>
+		<!--<li class="nav-item px-lg-5 px-sm-3 px-1">
+          <a class="nav-link" href="#our-client">Brands we Work</a>
+        </li>  -->
+		  <li class="nav-item px-lg-5 px-sm-3 px-1">
+          <a class="nav-link" href="clients.html">OUR CLIENTS</a>
+        </li>  
+		 <li class="nav-item px-lg-5 px-sm-3 px-1">
+          <a class="nav-link" href="contactus.html">CONTACT US</a>
+        </li>   
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+  </div>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active"><img src="images/pic3-mc.jpg" alt="Slide 1" class="d-block w-100"></div>
+    <div class="carousel-item"><img src="images/pic4-mc.jpg" alt="Slide 2" class="d-block w-100"></div>
+    <div class="carousel-item"><img src="images/pic5-mc.jpg" alt="Slide 3" class="d-block w-100"></div>
+    <div class="carousel-item"><img src="images/pic1-mc.jpg" alt="Slide 4" class="d-block w-100"></div>
+    <div class="carousel-item"><img src="images/pic6-mc.jpg" alt="Slide 5" class="d-block w-100"></div>
+    <div class="carousel-item"><img src="images/pic2-mc.jpg" alt="Slide 6" class="d-block w-100"></div>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<div style="height:1px; background:#cdc1c1"></div>
+
+<!-- MAIN: Replaced Security content with OFFICE / RETAIL AUTOMATION content from OFFICE_eqipment.docx -->
+<div class="container">
+  <div class="aboutus" style="border-radius:12px;">
+    <h3 style="text-align:center; color:#ba0001; padding-top:10px;">OFFICE / RETAIL AUTOMATION</h3>
+
+    <div style="margin-top:30px; font-size:20px; line-height:1.6;">
+
+      <h4>Note Sorting Machines + Billing Machine</h4>
+      <img src="images/note-sorting.png" alt="Note Sorting and Billing Machine" style="width:266px; display:block; margin:20px auto; border-radius:12px;">
+	   <img src="images/billing-machine.png" alt="Note Sorting and Billing Machine" style="width:266px; display:block; margin:20px auto; border-radius:12px;">
+      <p style="text-align:center;">Note sorting solutions and billing machines for retail & banking operations.</p>
+
+      <h4>Gold Testing Machines + Gold Weighing Machines</h4>
+      <img src="images/gold-testing.png" alt="Gold Testing and Weighing Machine" style="width:266px; display:block; margin:20px auto; border-radius:12px;">
+	  <img src="images/gold-weighing.png" alt="Gold Testing and Weighing Machine" style="width:266px; display:block; margin:20px auto; border-radius:12px;">
+      <p style="text-align:center;">Accurate and reliable equipment for jewellery testing and weighing requirements.</p>
+
+      <h4>Touchscreen Kiosks</h4>
+      <img src="images/touchscreen-kiosk.png" alt="Interactive Touchscreen Kiosk" style="width:400px; display:block; margin:20px auto; border-radius:12px;">
+	  <img src="images/it-oems.png" alt="IT OEMs Logos" style="width:319px; display:block; margin:20px auto; border-radius:12px;">
+      <p style="text-align:center;">Interactive kiosks for customer self-service and information display.</p>
+
+      <h4>IT OEMs – SCROLLING OPTION</h4>
+      
+      <p>Key OEMs and brands we work with:</p>
+      <p style="font-weight:bold;">
+        3C3, COMMSCOPE, MOLEX, D-LINK, CISCO, NETGEAR, TELTONIKA, VALRACK, RITTAL, HIKVISION, CP-PLUS, MATRIX, AIRPRO, UBIQUITY, TP-LINK, DELL, HP
+      </p>
+
+      <h4>OFFICE Solutions – OEMs – SCROLLING OPTION</h4>
+      <p>Office solutions OEMs:</p>
+      <p style="font-weight:bold;">
+        GUARDWEL, CPS, MASTER STORAGE, ALKON, GODREJ, ACZET
+      </p>
+
+    </div>
+  </div>
+</div>
+
+<!-- Back to top arrow -->
+<div><a href="#top" class="arrow" title="Back to top">
+  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+  </svg>
+</a></div>
+
+<div class="container-fluid">
+  <div class="row footer">
+  <div class="col-sm-4"><div><h3>Quick Links</h3>
+  <ul class="quicklinks">
+  <li><a href="aboutus.html">ABOUT US</a></li>
+  <li><b>IT SOLUTIONS</b></li>
+    <li><a class="dropdown-item" href="networking.html">NETWORKING </a></li>
+            <li><a class="dropdown-item" href="cctv.html">CCTV & SURVEILLANCE</a></li>
+            <li><a class="dropdown-item" href="access.html">ACCESS CONTROL</a></li>
+			<li><a class="dropdown-item" href="wifi.html">WiFi & TELECOM</a></li>
+			<li><a class="dropdown-item" href="av.html">AUDIO VIDEO</a></li>
+			<li><a class="dropdown-item" href="ithardware.html">IT HARDWARE</a></li>
+			 <li><hr class="dropdown-divider"></li>
+			 <li><b>OFFICE SOLUTIONS</b></li>
+			<li><a class="dropdown-item" href="office-storage.html">OFFICE STORAGE</a></li>
+			<li><a class="dropdown-item" href="office-chairs.html">OFFICE CHAIRS</a></li>
+			<li><a class="dropdown-item" href="security-equipment.html">SEQURITY EQUIPMENTS</a></li>
+			<li><a class="dropdown-item" href="office-auto.html">OFFICE AUTOMATION</a></li>
+  <li><a href="clients.html">OUR CLIENTS</a></li>
+  <li><a href="contactus.html">CONTACTS</a></li>
+  </ul>
+  </div></div>
+    <div class="col-sm-4">
+      <ul class="f-menu-icon" style="margin-top:30px;">
+        <li>Follow us:</li>
+        <li><img src="images/fb.png" alt="facebook"/></li>
+        <li><img src="images/linkdin.jpg" alt="linkedin"/></li>
+        <li><img src="images/yt.png" alt="youtube"/></li>
+      </ul>
+    </div>
+
+    <div class="col-sm-4">
+      <h3>Our Location:</h3>
+      <div style="margin-left:30px; color:white;"><b>Trustfox Solutions</b><br>
+        Office No: 273, Plot No-19D,<br>
+        Satara Plaza, Thane,<br>
+        Navi Mumbai-400705,<br>
+        Maharashtra, India<br><br>
+      </div>
+      <div style="margin-left:30px;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.405035249713!2d72.9049336861697!3d19.045921406912598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6062535d671%3A0x6fd8bb72912bcbf4!2s273%2C%20Plot%2C%2019%2C%20Mumbai%20-%20Satara%20Hwy%2C%20Best%20Colony%2C%20Chembur%2C%20Mumbai%2C%20Maharashtra%20400088!5e0!3m2!1sen!2sin!4v1691939975038!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
